@@ -1,39 +1,254 @@
 <!DOCTYPE html> <!--Indica que se trabaja el documento en HTML5-->
 
 <html lang="en"> <!--Se crea el arbol y se le indica al trabajador que se trabaja en ese idioma-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica Web</title>
 </head>
+
 <body>
     <header>
         <h1>DevSolutions</h1>
         <nav>
-            <a href="" >Inicio</a>
+            <a href="">Inicio</a>
             <a href=""> Proyectos</a>
             <a href=""> Acerca de</a>
             <a href="">Contactos</a>
         </nav>
         <div>
-            <a href="" >Inicio de Sesión</a>
+            <a href="">Inicio de Sesión</a>
             <a href=""> Registrar</a>
         </div>
-        <form>
-            
-        </form>
+
     </header>
     <main>
         <!--HERO SECTION-->
         <section>
             <div>
-            <h1>Encuentra tu próximo proyecto de software</h1>
-            <p>Conectando desarrolladores de proyectos</p>
+                <h1>Encuentra tu próximo proyecto de software</h1>
+                <p>Conectando desarrolladores de proyectos</p>
             </div>
+            <form>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                    <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
+                        <path d="M21 38c9.389 0 17-7.611 17-17S30.389 4 21 4S4 11.611 4 21s7.611 17 17 17Z" />
+                        <path stroke-linecap="round"
+                            d="M26.657 14.343A7.98 7.98 0 0 0 21 12a7.98 7.98 0 0 0-5.657 2.343m17.879 18.879l8.485 8.485" />
+                    </g>
+                </svg>
+                <input required type "number" placeholder="Busca tu proyecto">
+                <button type "submit"> Buscar</button>
+            </form>
         </section>
-        <section></section>
-        <section></section>
+        <section> 
+            <header>
+                <h1>Proyectos destacados</h1>
+        </header>
+        <article> 
+            <img src="https://cdn.milenio.com/uploads/media/2022/01/15/pitbull-es-originario-de-cuba.jpg" 
+            alt="Desc"
+            width="200"/>
+
+            <h1>Plataforma e-commerce</h1>
+            <p>Texto de parrafo</p>
+            <div>
+                <span>React</span>
+                <span>Python</span>
+                <span>AWS</span>
+            </div>
+        </article>
+    </section>
+        <section><article> 
+            <img src="https://tvazteca.brightspotcdn.com/dims4/default/5b37ea8/2147483647/strip/true/crop/1200x740+0+30/resize/1200x740!/format/jpg/quality/90/?url=http%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fb2%2F2b%2F54462e897494532b933f1ef02f9b%2Fstagepitbull-2038662.jpg" 
+            alt="Desc"
+            width="200"/>
+
+            <h1>Plataforma e-commerce</h1>
+            <p>Texto de parrafo</p>
+            <div>
+                <span>React</span>
+                <span>Python</span>
+                <span>AWS</span>
+            </div>
+        </article></section>
     </main>
-    <footer></footer>
-</body
-</html>
+    <footer>
+        <small>
+            &copy; 2025 Clau Todos los derechos reservados 
+        </small>
+    </footer>
+</body </html>
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MWW - Búsqueda de Software</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00BFFF",
+                        "background-light": "#F5F5F5",
+                        "background-dark": "#0A0A0A",
+                        "accent": "#FF007A"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        .text-glow {
+            text-shadow: 0 0 8px currentColor;
+        }
+        .card-glow {
+            box-shadow: 0 0 15px 0 rgba(255, 0, 122, 0.5), 0 0 5px 0 rgba(0, 191, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="absolute top-0 left-0 w-full h-full bg-grid-white/[0.05]"></div>
+<div class="layout-container flex h-full grow flex-col z-10">
+<div class="px-4 sm:px-8 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap px-4 sm:px-10 py-5">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 text-primary text-glow">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-white text-3xl font-bold tracking-[-0.015em] text-glow">MWW</h2>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-gradient-to-r from-primary to-accent text-white text-base font-bold tracking-[0.015em] hover:scale-105 transition-transform duration-300">
+<span class="truncate">Dale!</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-12 border-2 border-accent card-glow" data-alt="User avatar image" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuAplM_ebZe7P-IR8Z2l-jb3vD5LcT1aBDZlk2p08bOxXDLZtVb8cYNQqmEusgqTcAflrB0QnfYUN7K4UKu9fI0LJAIySrDY2q9-t0lyK7TBmXOhZzImRGjwyOAJ1LJ_5hySKib-Syg-m1gJSQcJHNc7kifA46KyW54tFjRIDit1NXgZdRtu9WFzo0C5kj71-Edu1G8BJAGRaSXaAQdI58D40hKKBPjRPEENLduBTk8LRQnF_UzRily8pwkcN0C7aGgQLH7aE7zRCj");'></div>
+</div>
+</header>
+<main class="flex flex-col gap-12 p-4 items-center">
+<div class="relative w-full flex flex-col items-center justify-center text-center py-16">
+<div class="absolute inset-0 overflow-hidden">
+<img alt="Pitbull background" class="w-full h-full object-cover opacity-10 blur-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGKT1GeNPo3SVgJ0zT7-MqmhVE-JaI9MeZP-VtYjoBAa9X26eah9uuru5AeRHB83aabDxtWBxte2-VXINSXkGUDve-KIx0i5qRIS3DC2uN6o45CqbxuNZ6JFMSIIBgLfxMvKQQd9EXt1KCBhzyEvEqpgkKhXaal4qGw0VC3C1ktKIy-HP13wSUUTdLw2oOF8xuUnNUdDg4ZUKY5IBxAWe34Awjy9lPq93xC-xPQuKCciW1sZW0i0wMiuob-EZWMaEtcyxk83aVlZl4"/>
+</div>
+<div class="relative z-10 flex flex-col items-center gap-6">
+<div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-accent card-glow shadow-2xl">
+<img alt="Pitbull" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGKT1GeNPo3SVgJ0zT7-MqmhVE-JaI9MeZP-VtYjoBAa9X26eah9uuru5AeRHB83aabDxtWBxte2-VXINSXkGUDve-KIx0i5qRIS3DC2uN6o45CqbxuNZ6JFMSIIBgLfxMvKQQd9EXt1KCBhzyEvEqpgkKhXaal4qGw0VC3C1ktKIy-HP13wSUUTdLw2oOF8xuUnNUdDg4ZUKY5IBxAWe34Awjy9lPq93xC-xPQuKCciW1sZW0i0wMiuob-EZWMaEtcyxk83aVlZl4"/>
+</div>
+<h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-[-0.033em] uppercase text-glow">
+<span class="text-accent">Buscador de Software</span> MWW
+                            </h1>
+<p class="text-primary text-xl md:text-2xl font-bold tracking-wider">el software que tu necesitas, dale</p>
+</div>
+</div>
+<div class="w-full max-w-2xl px-4 py-3">
+<label class="flex flex-col min-w-40 h-16 w-full">
+<div class="relative flex w-full flex-1 items-stretch h-full">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-full text-white focus:outline-none focus:ring-4 focus:ring-accent bg-[#1a1a1a] border-2 border-primary/50 h-full placeholder:text-gray-500 px-8 text-lg font-normal leading-normal transition-all duration-300 focus:border-accent" placeholder="¿Qué software buscas, Mr. Worldwide?" value=""/>
+<div class="absolute right-4 top-1/2 -translate-y-1/2 text-primary text-glow">
+<span class="material-symbols-outlined text-3xl">search</span>
+</div>
+</div>
+</label>
+</div>
+<div class="w-full grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-8 p-4">
+<div class="flex flex-col gap-3 pb-3 bg-black/50 backdrop-blur-sm border border-primary/30 rounded-xl overflow-hidden card-glow hover:border-accent hover:-translate-y-2 transition-all duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Pitbull in a suit and sunglasses" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCFs7Afiupdhh-pKYnQ1MUS2BFG8PlVGv0ArmcYCfPUo7WJTKxuQYQTVkWMscD1YRD4jbPpV7R2bMxPZM4dW26Vg1qnanz9ImGzEfR2ft-Pl5-Pg3qurLHfBZ9iaP6-UvlNHRT85ovqRRTxCcbJ1uGzVWDaCgycDwNFVyQwGCEyH5V3LDkhAgpevPQ87jkyBiSnZsxFfBf2TznGudu3RgdBt9ufzRW6LooodxPwG8pwK-yaTxRrBI5_R4kx469SKzJpFzQO8w29p5Sd');"></div>
+<div class="p-4">
+<p class="text-white text-xl font-bold leading-normal">Adobe Photoshop</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Edición de imágenes profesional</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-black/50 backdrop-blur-sm border border-primary/30 rounded-xl overflow-hidden card-glow hover:border-accent hover:-translate-y-2 transition-all duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Pitbull looking cool on stage" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDnhq9JR29wTonrTuOOYAkXWtdua3Xswm3Ycx12-I5NAyLoajzXztoAms-YOb754hMX7ex8OtAeCi7fVcB6Q18MWIa0sGLH_-q7_aTeF4L6_eQ-yzI_v9CDawQV2wUPhnb4QYUKbqXeFkB_h_KsRDOVvAw4HAC3cARF86Z1bB3BX1xgqFwOazMkGQB2lwxBjPdbWmQB6XxyT72bpA2T152Beg9Xmo5a0bcW2IqeEmQWxFMM5XouKQLmJI73Du2U_NSXwHyMgDrDoUAQ');"></div>
+<div class="p-4">
+<p class="text-white text-xl font-bold leading-normal">Slack</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Comunicación para equipos</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-black/50 backdrop-blur-sm border border-primary/30 rounded-xl overflow-hidden card-glow hover:border-accent hover:-translate-y-2 transition-all duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Pitbull smiling with a microphone" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARUxcmJ506dReerEXj4wjaZa9HPAPyZjJrqZbJVn4mG8bmV2jqQ_G3P5mXQVQDP_5MVNVfxez_Wtma5AN6WWGoIA5bf_NbC4BZPYWe9c6X4aTwNVM1J1wD1cE2pKpZkZTz3PEfzL7ApkwZrc5IZO2BPqT-NC4G_SSc5NtdRnAFU9434tsIVRLBWPPpxNRujQ8M6gBIOZpk0wB3MBRSFqzw8GGCO4mN7vlA9DTGrUL9fVH_N8zKC3X0DYmqRt3FyUby6t8irXgQsXna');"></div>
+<div class="p-4">
+<p class="text-white text-xl font-bold leading-normal">Figma</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Diseño de interfaces colaborativo</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-black/50 backdrop-blur-sm border border-primary/30 rounded-xl overflow-hidden card-glow hover:border-accent hover:-translate-y-2 transition-all duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Pitbull posing in a black suit" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBd8Ldl3nwaN-7Lne4dqz_SPESL_ciuUFHgsRk82bulV2nvgK8sELw0eTGZj-GxBncjFZY8Ub0FVQdqN7LO3GLAsVrR-q6qt59jRbt3ff7DaMdwqDvYc3P2L1GWJKAXj2qx_8hDSTtB0doiClw27S1M-REnZK5Cqk8M0U5zAFToUT1lAOvr8nAu5aReSssaFvg4yZPMYPx0o102RGUYyxe9VV0VMmeyI7Qn7GVIqxIQswD2JFyts2ihTkH4fZ4KV5sbRVWZb6y8fUan');"></div>
+<div class="p-4">
+<p class="text-white text-xl font-bold leading-normal">Notion</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">El espacio de trabajo todo en uno</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-black/50 backdrop-blur-sm border border-primary/30 rounded-xl overflow-hidden card-glow hover:border-accent hover:-translate-y-2 transition-all duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Pitbull performing at a concert" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGKT1GeNPo3SVgJ0zT7-MqmhVE-JaI9MeZP-VtYjoBAa9X26eah9uuru5AeRHB83aabDxtWBxte2-VXINSXkGUDve-KIx0i5qRIS3DC2uN6o45CqbxuNZ6JFMSIIBgLfxMvKQQd9EXt1KCBhzyEvEqpgkKhXaal4qGw0VC3C1ktKIy-HP13wSUUTdLw2oOF8xuUnNUdDg4ZUKY5IBxAWe34Awjy9lPq93xC-xPQuKCciW1sZW0i0wMiuob-EZWMaEtcyxk83aVlZl4');"></div>
+<div class="p-4">
+<p class="text-white text-xl font-bold leading-normal">Spotify</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Música para todos</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-black/50 backdrop-blur-sm border border-primary/30 rounded-xl overflow-hidden card-glow hover:border-accent hover:-translate-y-2 transition-all duration-300">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Pitbull in a white suit jacket" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAMCA6g4PpEglQB-zmtQiJwVMDMrcw7WUclMnV_ErCyrEJb_-uiLMkYWuM_4FHUoHoiiJ1mrwVgA2BVF4NGuNORB_lc8fpB5858TKKgXfQWrRZiyRfaBTLcvkwnnPpREVAZyyS32bbR0MckP-iNfneFMIxPWHmAqxMIDZqTo8KQXkpaGJkR3lt5A84K3t-6xwcXS0AfsjvVDD5WaNJOwY_IXX42PzRIVQtHWrOojTibgcYWodrpFeZo1J33e3OsiNJXUpaXFpm19GTt');"></div>
+<div class="p-4">
+<p class="text-white text-xl font-bold leading-normal">VS Code</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Editor de código inteligente</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-center p-4 gap-2">
+<a class="flex size-10 items-center justify-center text-gray-400 hover:text-primary" href="#">
+<span class="material-symbols-outlined">chevron_left</span>
+</a>
+<a class="text-base font-bold leading-normal tracking-[0.015em] flex size-10 items-center justify-center text-white rounded-full bg-accent" href="#">1</a>
+<a class="text-base font-normal leading-normal flex size-10 items-center justify-center text-gray-400 rounded-full hover:bg-white/10 hover:text-white" href="#">2</a>
+<a class="text-base font-normal leading-normal flex size-10 items-center justify-center text-gray-400 rounded-full hover:bg-white/10 hover:text-white" href="#">3</a>
+<span class="text-base font-normal leading-normal flex size-10 items-center justify-center text-gray-400 rounded-full">...</span>
+<a class="text-base font-normal leading-normal flex size-10 items-center justify-center text-gray-400 rounded-full hover:bg-white/10 hover:text-white" href="#">10</a>
+<a class="flex size-10 items-center justify-center text-gray-400 hover:text-primary" href="#">
+<span class="material-symbols-outlined">chevron_right</span>
+</a>
+</div>
+</main>
+<footer class="border-t border-solid border-white/10 mt-10 p-6 text-center">
+<div class="flex justify-center gap-6 mb-4">
+<a class="text-gray-400 hover:text-primary" href="#">Facebook</a>
+<a class="text-gray-400 hover:text-primary" href="#">Twitter</a>
+<a class="text-gray-400 hover:text-primary" href="#">Instagram</a>
+</div>
+<p class="text-sm text-gray-400">© 2024 MWW. Todos los derechos reservados. Dale!</p>
+<div class="flex justify-center gap-4 mt-2 text-xs text-gray-500">
+<a class="hover:underline" href="#">Términos de Servicio</a>
+<span>|</span>
+<a class="hover:underline" href="#">Política de Privacidad</a>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
